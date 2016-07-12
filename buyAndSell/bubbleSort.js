@@ -21,5 +21,24 @@
 // Feel free to add helper functions if needed
 
 var maximumProfit  = function(array) {
+	var indexofsmallvalue=function(arr){
+		var sindex=0;
+		for (var i =0 ; i < arr.length; i++) {
+			if(arr[i+1]<arr[i]){
+				sindex=i+1;
+			}
+		}
+		return sindex
+	}
 
-};
+	var smallindex=indexofsmallvalue(array);
+	console.log(smallindex);
+	var largindex=smallindex;
+	for (var i = smallindex ; i < array.length; i++) {
+		if(array[i+1] > array[i]){
+			largindex=i+1;
+		}
+	}
+	return array[largindex]-array[smallindex];
+
+}
