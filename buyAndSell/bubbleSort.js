@@ -23,22 +23,30 @@
 var maximumProfit  = function(array) {
 	var indexofsmallvalue=function(arr){
 		var sindex=0;
+		var smallval=arr[0];
 		for (var i =0 ; i < arr.length; i++) {
-			if(arr[i+1]<arr[i]){
+			if(arr[i+1]<smallval){
 				sindex=i+1;
+				smallval=arr[i+1]
 			}
+			console.log(sindex)
 		}
+		console.log(sindex)
 		return sindex
 	}
 
 	var smallindex=indexofsmallvalue(array);
-	console.log(smallindex);
+	//console.log(smallvalue);
 	var largindex=smallindex;
+	var largval=array[smallindex];
 	for (var i = smallindex ; i < array.length; i++) {
-		if(array[i+1] > array[i]){
+		if(array[i+1] > largval){
+			largval=array[i+1]
 			largindex=i+1;
 		}
 	}
+  console.log(largindex);
+
 	return array[largindex]-array[smallindex];
 
 }
