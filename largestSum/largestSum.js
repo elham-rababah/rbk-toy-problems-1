@@ -13,8 +13,8 @@ var largestSum = function(str){
 	for (var i = 0; i < arrofnum.length; i++) {
 		sum=sum+Number(arrofnum[i]);
 	}
-	console.log("5537376230")
-    var tend=Number(sum.toString().substr(0,11));
+	console.log("5537376230\n")
+    var tend=Number(sum.toString().substr(0,12));
     console.log(tend)
   return tend;
 }
