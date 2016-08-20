@@ -44,7 +44,7 @@ Jar.prototype.pourOut = function(amount) {
 
 Jar.prototype.getTotalAmount = function() {
   // TODO
-  return Totalammount;
+  return this.Totalammount;
 };
 
 Jar.prototype.getConcentration = function(type) {
