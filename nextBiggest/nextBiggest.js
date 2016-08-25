@@ -72,6 +72,15 @@ nextBigger(531)==-1
 */
 
 function nextBigger(num){
-  
+  var str=num.toString()
+  str=str.split('')
+  for (var i = 0; i < str.length; i++) {
+  	str[i]=Number(str[i])
+  }
+  for (var i = 0; i < Things.length; i++) {
+  	// this for to see the last number which more than other 
+  }
+  str.sort(function(a, b){return b-a})
+  console.log(str)
 };
 
