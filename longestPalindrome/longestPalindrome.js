@@ -12,5 +12,25 @@
 */
 
 var longestPalindrome = function (string) {
-  
+	var longestword=""
+  for (var i =1; i <= string.length; i++) {
+  	console.log(string.substr(0,i))
+  	var stt='';
+  	for (var y= string.substr(0,i).length-1; y >=0; y--) {
+  		stt=stt+string.substr(0,i)[y]
+  	}
+  	if (stt===string.substr(0,i)&&string.substr(0,i).length>longestword.length){
+  		//console.log("the same")
+  		longestword=string.substr(0,i);
+  		//console.log(longestword,"vghvh")
+
+  	}else{
+  		if(string.substr(0,i).length%2==1){
+  			string=string.substr(i);
+  			console.log(string)
+  		}
+  	}
+
+  }
+  return longestword
 };
