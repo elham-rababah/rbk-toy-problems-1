@@ -22,101 +22,95 @@ var readFile = function (){
 var totalNameScores = function(){
 	var  totalScore=0
 	var arrofname=readFile();
-	//console.log(arrofname.length,"jioh")
-	for (var i = 0; i < arrofname.length; i++) {
-		//console.log(arrofname[0])
-		//arrofname[i]
+	arrofname.sort();
+	arrofname.reverse()
+	console.log(arrofname[0],arrofname[1],arrofname[2])
+    for (var i = 0; i < arrofname.length; i++) {
 		var alphaWorth=0;
-		//console.log(arrofname[i].length-1)
 		for (var y = 1; y < arrofname[i].length-1; y++) {
-			//Things[i]
-			//console.log(arrofname[i])
-			if(arrofname[i][y]='A'){
-				alphaWorth=alphaWorth+1
+			if(arrofname[i][y]==='A'){
+				alphaWorth=alphaWorth+1;
 			}
-			if(arrofname[i][y]='B'){
-				alphaWorth=alphaWorth+2
+			if(arrofname[i][y]==='B'){
+				alphaWorth=alphaWorth+2;
 			}
-			if(arrofname[i][y]='C'){
+			if(arrofname[i][y]==='C'){
 				alphaWorth=alphaWorth+3
 			}
-			if(arrofname[i][y]='D'){
+			if(arrofname[i][y]==='D'){
 				alphaWorth=alphaWorth+4
 			}
-			if(arrofname[i][y]='E'){
+			if(arrofname[i][y]==='E'){
 				alphaWorth=alphaWorth+5
 			}
-			if(arrofname[i][y]='F'){
+			if(arrofname[i][y]==='F'){
 				alphaWorth=alphaWorth+6
 			}
-			if(arrofname[i][y]='G'){
+			if(arrofname[i][y]==='G'){
 				alphaWorth=alphaWorth+7
 			}
-			if(arrofname[i][y]='H'){
+			if(arrofname[i][y]==='H'){
 				alphaWorth=alphaWorth+8
 			}
-			if(arrofname[i][y]='I'){
+			if(arrofname[i][y]==='I'){
 				alphaWorth=alphaWorth+9
 			}
-			if(arrofname[i][y]='J'){
+			if(arrofname[i][y]==='J'){
 				alphaWorth=alphaWorth+10
 			}
-			if(arrofname[i][y]='K'){
+			if(arrofname[i][y]==='K'){
 				alphaWorth=alphaWorth+11
-			}if(arrofname[i][y]='L'){
-				alphaWorth=alphaWorth+12
+			}if(arrofname[i][y]==='L'){
+			   alphaWorth=alphaWorth+12
 			}
-			if(arrofname[i][y]='M'){
-				alphaWorth=alphaWorth+13
+			if(arrofname[i][y]==='M'){
+				alphaWorth=alphaWorth+13;
 			}
-			if(arrofname[i][y]='N'){
+			if(arrofname[i][y]==='N'){
 				alphaWorth=alphaWorth+14
 			}
-			if(arrofname[i][y]='O'){
+			if(arrofname[i][y]==='O'){
 				alphaWorth=alphaWorth+15
 			}
-			if(arrofname[i][y]='P'){
+			if(arrofname[i][y]==='P'){
 				alphaWorth=alphaWorth+16
 			}
-			if(arrofname[i][y]='Q'){
+			if(arrofname[i][y]==='Q'){
 				alphaWorth=alphaWorth+17
 			}
-			if(arrofname[i][y]='R'){
+			if(arrofname[i][y]==='R'){
 				alphaWorth=alphaWorth+18
 			}
-			if(arrofname[i][y]='S'){
+			if(arrofname[i][y]==='S'){
 				alphaWorth=alphaWorth+19
 			}
-			if(arrofname[i][y]='T'){
+			if(arrofname[i][y]==='T'){
 				alphaWorth=alphaWorth+20
 			}
-			if(arrofname[i][y]='U'){
+			if(arrofname[i][y]==='U'){
 				alphaWorth=alphaWorth+21
 			}
-			if(arrofname[i][y]='V'){
+			if(arrofname[i][y]==='V'){
 				alphaWorth=alphaWorth+22
 			}
-			if(arrofname[i][y]='W'){
+			if(arrofname[i][y]==='W'){
 				alphaWorth=alphaWorth+23
 			}
-			if(arrofname[i][y]='X'){
+			if(arrofname[i][y]==='X'){
 				alphaWorth=alphaWorth+24
 			}
-			if(arrofname[i][y]='Y'){
+			if(arrofname[i][y]==='Y'){
 				alphaWorth=alphaWorth+25
 			}
-			if(arrofname[i][y]='Z'){
+			if(arrofname[i][y]==='Z'){
 				alphaWorth=alphaWorth+26
 			}
-			console.log(alphaWorth)
 		}
-		console.log(alphaWorth,"hgu")
 		totalScore=totalScore+alphaWorth*i;
 	}
-	//console.log(this.contents)
   return totalScore;
 }
 
 module.exports = {totalNameScores};
 
-//   /Users/admin/Desktop/rbk-toy-problems-1/scoreAName
+
